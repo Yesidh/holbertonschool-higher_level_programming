@@ -7,19 +7,22 @@
 
 
 # Python - Hello, World
-First step in Python:                                                          
-Python scripts
-Manipulatin strings and integers in python
-Linked list in C(a nice exercice)
+First step in Python:                                                           
+Python scripts                                                                  
+Manipulatin strings and integers in python                                      
+Linked list in C(a nice exercice)                                               
 Some about asembler/Python                                                      
 ## Examples                                                                     
 form this text:                                                                 
+                                                                                
 str = "Python is an interpreted, interactive, object-oriented programming\      
  language that combines remarkable power with very clear syntax"                
+										
 only print this:                                                                
+										
 object-oriented programming with Python                                         
                                                                                 
-you can see the solution in the file 8-cooncat_edges.py                         
+you can see the solution in the file 8-concat_edges.py                          
 
 ## Prerequisites
 8 lecture hours about variables in phyton                                       
