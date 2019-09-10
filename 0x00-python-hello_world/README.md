@@ -7,22 +7,29 @@
 
 
 # Python - Hello, World
-
-                                                                                
+First step in Python:                                                          
+Python scripts
+Manipulatin strings and integers in python
+Linked list in C(a nice exercice)
+Some about asembler/Python                                                      
 ## Examples                                                                     
+form this text:                                                                 
+str = "Python is an interpreted, interactive, object-oriented programming\      
+ language that combines remarkable power with very clear syntax"                
+only print this:                                                                
+object-oriented programming with Python                                         
                                                                                 
+you can see the solution in the file 8-cooncat_edges.py                         
+
 ## Prerequisites
-8 lecture hours about variables in phyton
+8 lecture hours about variables in phyton                                       
 ## Installing
 
-for have the code in your local machine you only need download the code files and put it into a directory and compile it with gcc compiler 
-```
-gcc -Wall -Werror -Wextra -pedantic
-```
+for have the code in your local machine you only need download the code files and put it into a directory.
 ## Built With
 
-All the code was write under ubuntu 14.04 using the compiler version
-python 3.4 and pep8
+All the code was write under ubuntu 14.04 using the compiler version            
+python 3.4 and pep8                                                             
 
 ## Contributing
 
