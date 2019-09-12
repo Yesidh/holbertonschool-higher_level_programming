@@ -50,6 +50,4 @@ for my learning in Holberton School
 | 100-print_tebahpla.py                | Program that prints the ASCII alphabet in reverse order, alternating lowercase an uppercase, not allowed to import any module|
 | 101-remove_char_at.py| Function that creates a copy of the string, removing the character at the position n, not allowed no use any module|
 | 102-magic_calculation.py   | Function that prints exactlty the same as the following Python bytecode:
-
-  |
 |lists.h| header file for linked list in C|
