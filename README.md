@@ -41,4 +41,5 @@ For my learning in Holberton School
 |           Project        |              Description                 |
 | ------------------------ | ---------------------------------------- |
 |0x00 Python-Hello, World  | making python scripts, manipulation strings and integers|
-|0x01 Python-if/else, loops, functions  | |                                                                             
+|0x01 Python-if/else, loops, functions  |Conditional if, else, elif. Loops: for, while. Functions |
+|0x02 Python-Import & modules|||                                                                             
