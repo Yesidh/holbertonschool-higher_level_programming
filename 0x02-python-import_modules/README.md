@@ -37,10 +37,11 @@ for my learning in Holberton School
 | **1-calculation.py** | Program that imports functions from the file calculator_1.py, does some Maths, and prints the result, use the function print no more than 4 times, not allowed to use * for importing or __import__, the code should not be executed when imported|
 |--------------|
 | **2-args.py** |
-		 Program that prints the number of and the list of its arguments
+|		 Program that prints the number of and the list of its arguments
 		 	  - The output shoul be:
 			      	- Number of arguments(s) followed by *arument* (if number is one) or *aguments* (otherwise) followed by   
 			      	- : (or . if no arguments were passed) followed by
 			      	- a new line, followed by (if at least one argument),
 			      	- one line per argument
 			       	- The code should not be executed when importe
+|
