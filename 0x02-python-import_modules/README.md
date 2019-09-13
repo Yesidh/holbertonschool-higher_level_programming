@@ -36,8 +36,8 @@ for my learning in Holberton School
 | **0-add.py** | Program that imports the function def add(a, b) from the file add_0.py and prints the result fo the addition 1 + 2 = 3, not allowed to use * for importing or __import__, your code should not be execute when imported-by using __impor__|
 | **1-calculation.py** | Program that imports functions from the file calculator_1.py, does some Maths, and prints the result, use the function print no more than 4 times, not allowed to use * for importing or __import__, the code should not be executed when imported|
 ## algo
-|    file       |
-|-------------- |
+|                                   file                                       |
+|----------------------------------------------------------------------------- |
 | **2-args.py** |
 		 Program that prints the number of and the list of its arguments
 		 	  - The output shoul be:
