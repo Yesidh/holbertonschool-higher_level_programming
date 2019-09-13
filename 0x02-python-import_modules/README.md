@@ -38,7 +38,7 @@ for my learning in Holberton School
 ## algo
 |                                   file                                       |
 |----------------------------------------------------------------------------- |
-| **2-args.py** |
+|                             **2-args.py**                                    |
 		 Program that prints the number of and the list of its arguments
 		 	  - The output shoul be:
 			      	- Number of arguments(s) followed by *arument* (if number is one) or *aguments* (otherwise) followed by   
