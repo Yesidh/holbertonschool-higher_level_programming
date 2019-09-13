@@ -6,7 +6,7 @@ if __name__ == "__main__":
     b = int(argv[1])
     c = int(argv[3])
     if a > 4:
-        print("usage: {} {} {} {}".format(argv[0], argv[1], argv[2], argv[3]))
+        print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
     elif argv[2] == '+':
         print("{:d} + {:d} = {:d}".format(b, c, int(add(b, c))))
@@ -22,3 +22,4 @@ if __name__ == "__main__":
         exit(0)
     else:
         print("Unknown operator. Available operators: +, -, * and /")
+        exit(1)
