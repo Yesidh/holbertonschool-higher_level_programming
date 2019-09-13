@@ -38,11 +38,11 @@ for my learning in Holberton School
 ## algo
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-------------------------------------------------------------------2-args.py-----------------------------------------------------------------------------------|
-		 Program that prints the number of and the list of its arguments
-		 	  - The output shoul be:
-			      	- Number of arguments(s) followed by *arument* (if number is one) or *aguments* (otherwise) followed by   
-			      	- : (or . if no arguments were passed) followed by
-			      	- a new line, followed by (if at least one argument),
-			      	- one line per argument
-			       	- The code should not be executed when importe
+|-------------------------------------------------------------------2-args.py----------------------------------------------------------------------------------|
+Program that prints the number of and the list of its arguments
+  - The output shoul be:
+   	- Number of arguments(s) followed by *arument* (if number is one) or *aguments* (otherwise) followed by   
+      	- : (or . if no arguments were passed) followed by
+      	- a new line, followed by (if at least one argument),
+      	- one line per argument
+  - The code should not be executed when importe
