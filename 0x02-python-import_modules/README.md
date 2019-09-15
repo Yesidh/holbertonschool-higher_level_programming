@@ -8,6 +8,17 @@
 
 # :colombia: Python - import & modules
 ## Examples                                                                     
+                                                                                
+print the numbers of and list of its arguments:                                 
+-./2-args.py Hello Holberton School 98 Battery street                           
+ 6 arguments:                                                                   
+ 1: Hello                                                                       
+ 2: Holberton                                                                   
+ 3: School                                                                      
+ 4: 98                                                                          
+ 5: Battery                                                                     
+ 6: street                                                                      
+                                                                                
 ## Prerequisites
 8 lecture hours about import and modules in phyton                                       
 ## Installing
@@ -33,16 +44,6 @@ for my learning in Holberton School
 
 |         File            |             Description                  |
 | ------------------------| ---------------------------------------- |
-| **0-add.py** | Program that imports the function def add(a, b) from the file add_0.py and prints the result fo the addition 1 + 2 = 3, not allowed to use * for importing or __import__, your code should not be execute when imported-by using __impor__|
-| **1-calculation.py** | Program that imports functions from the file calculator_1.py, does some Maths, and prints the result, use the function print no more than 4 times, not allowed to use * for importing or __import__, the code should not be executed when imported|
-## algo
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-------------------------------------------------------------------2-args.py----------------------------------------------------------------------------------|
-	Program that prints the number of and the list of its arguments
-  		- The output shoul be:
-   		  - Number of arguments(s) followed by *arument* (if number is one) or *aguments* (otherwise) followed by   
-      		  - : (or . if no arguments were passed) followed by
-      		  - a new line, followed by (if at least one argument),
-      		  - one line per argument
-  		- The code should not be executed when importe
+| **0-add.py** | Program that imports the function def add(a, b) from the file add_0.py and prints the result fo the addition 1 + 2 = 3, not allowed to use * for importing or ____import____, your code should not be execute when imported-by using ____impor____|
+| **1-calculation.py** | Program that imports functions from the file calculator_1.py, does some Maths, and prints the result, use the function print no more than 4 times, not allowed to use * for importing or ____import____, the code should not be executed when imported|
+| **agrs.py| program that prints the numbe of and the list of its arguments
