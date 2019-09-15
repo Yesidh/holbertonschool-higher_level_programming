@@ -8,6 +8,17 @@
 
 # Python - if/else, loops, functions
 ## Examples                                                                     
+revome a character in a string:
+
+"Holberton School", remove the character 3 and print again
+"Python", remove the character -2 and print again
+"C is fun", remove the character 3 and print again
+
+The result:
+Holerton School
+Python
+ is fun
+
 ## Prerequisites
 8 lecture hours about variables in phyton                                       
 ## Installing
