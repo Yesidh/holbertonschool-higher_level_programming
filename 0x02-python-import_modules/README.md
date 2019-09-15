@@ -46,7 +46,7 @@ for my learning in Holberton School
 | ------------------------| ---------------------------------------- |
 | **0-add.py** | Program that imports the function def add(a, b) from the file add_0.py and prints the result fo the addition 1 + 2 = 3, not allowed to use * for importing or ____import____, your code should not be execute when imported-by using ____impor____|
 | **1-calculation.py** | Program that imports functions from the file calculator_1.py, does some Maths, and prints the result, use the function print no more than 4 times, not allowed to use * for importing or ____import____, the code should not be executed when imported|
-| **agrs.py**| program that prints the number of and the list of its arguments, the code should not be executed when imported|
+| **2-agrs.py**| program that prints the number of and the list of its arguments, the code should not be executed when imported|
 | **3-infinite_add.py** | Program that prints the result of the addition or all arguments|
 | **4-hidden_discovery.py** | Program that prints all the names defined by the compiled module hidden_4.pyc, your code should not be executed when imported|
 | **5-variable_load.py** | program that imports variable a from the file variable_load_5.py and prints the value, not allowed to use * for importing or ____import_____, the code should not be executed when imported|
