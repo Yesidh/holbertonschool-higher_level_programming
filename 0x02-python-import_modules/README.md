@@ -18,7 +18,7 @@ print the numbers of and list of its arguments:
  4: 98                                                                          
  5: Battery                                                                     
  6: street                                                                      
-                                                                                
+see the file 2-args.py                                                          
 ## Prerequisites
 8 lecture hours about import and modules in phyton                                       
 ## Installing
@@ -46,4 +46,11 @@ for my learning in Holberton School
 | ------------------------| ---------------------------------------- |
 | **0-add.py** | Program that imports the function def add(a, b) from the file add_0.py and prints the result fo the addition 1 + 2 = 3, not allowed to use * for importing or ____import____, your code should not be execute when imported-by using ____impor____|
 | **1-calculation.py** | Program that imports functions from the file calculator_1.py, does some Maths, and prints the result, use the function print no more than 4 times, not allowed to use * for importing or ____import____, the code should not be executed when imported|
-| **agrs.py| program that prints the numbe of and the list of its arguments
+| **agrs.py| program that prints the number of and the list of its arguments, the code should not be executed when imported|
+| **3-infinite_add.py** | Program that prints the result of the addition or all arguments|
+| **4-hidden_discovery.py** | Program that prints all the names defined by the compiled module hidden_4.pyc, your code should not be executed when imported|
+| **5-variable_load.py** | program that imports variable a from the file variable_load_5.py and prints the value, not allowed to use * for importing or ____import_____, the code should not be executed when imported|
+| **100-my_calculator** | Program that imports all functions from the file calculator_1.py and handeles basic operations +, -, * and /|
+| **101-easy_print.py** | program that prints #pythoniscool, followed by a new line in the standard output, maximun 2 lines of code, not allowed to use print, eval, open, import sys|
+| **102-magic_calculation.py** | Write a python function that does exactyly the same as a python bytecode|
+| **102-fast_alphabet.py** | Program that prints the alphabet un uppercase, maximum lines of code = 3, nota allowed to use: loops, conditional statements, str.join(), string literal and system calls|
