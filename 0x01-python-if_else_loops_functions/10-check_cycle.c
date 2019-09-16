@@ -13,12 +13,10 @@ int check_cycle(listint_t *list)
 
 	w = list;
 
-	while (list->next)
+	while (list)
 	{
-		if (w->next == list->next)
+		if (w == list->next)
 			return (1);
-		if (list->next == NULL)
-			return (0);
 		list = list->next;
 	}
 	return (0);
