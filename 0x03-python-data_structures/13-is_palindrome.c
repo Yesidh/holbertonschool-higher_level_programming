@@ -12,6 +12,8 @@ int is_palindrome(listint_t **head)
 	if (head == NULL && *head == NULL)
 		return (1);
 	kola = *head;
+	if (kola->next == NULL)
+		return  (0);
 	for (i = 0; kola->next; i++)
 		kola = kola->next;
 	j = i / 2;
