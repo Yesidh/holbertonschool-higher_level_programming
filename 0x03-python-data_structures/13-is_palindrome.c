@@ -9,7 +9,7 @@ int is_palindrome(listint_t **head)
 	size_t i = 0, j = 0, l = 0, k = 0;
 	listint_t *kola;
 
-	if (head == NULL)
+	if (head == NULL && *head == NULL)
 		return (1);
 	kola = *head;
 	for (i = 0; kola->next; i++)
