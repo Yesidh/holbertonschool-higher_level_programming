@@ -15,19 +15,17 @@ int is_palindrome(listint_t **head)
 	for (i = 0; kola->next; i++)
 		kola = kola->next;
 	j = i / 2;
-	l = i - 1;
-	for (i = 0; i == j; i++)
+	l = i - 2;
+	for (i = 0; i < j; i++)
 	{
 		if ((*head)->n == kola->n)
 		{
-			for (k = 0; k == l; k++)
+			*head = (*head)->next;
+			kola = *head;
+			for (k = 0; k < l; k++)
 				kola = kola->next;
 			if ((*head)->n == kola->n)
-			{
-				*head = (*head)->next;
-				l--;
-				kola = *head;
-			}
+				l -= 2;
 			else
 				return (0);
 		}
