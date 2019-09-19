@@ -18,11 +18,12 @@
 - Tuple packing                                                                 
 - How to use del statement and how to use it                                    
 ## Examples                                                                     
-- Return a tupe with the lenght of a stirng and its first character:            
+- Return a tuple with the lenght of a stirng and its first character:           
                                                                                 
   sentence = "At Holberton school, I learnt C!"                                 
                                                                                 
   Length: 32 - First character: A                                               
+see the file 8-multiple_returns.py                                              
 ## Prerequisites
 8 lecture hours about list and tuples in phyton                                 
 ## Installing
