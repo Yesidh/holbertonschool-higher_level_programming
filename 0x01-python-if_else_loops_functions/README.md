@@ -6,7 +6,7 @@
 
 
 
-#:colombia: Python - if/else, loops, functions
+# :colombia: Python - if/else, loops, functions
 - Who created Python                                                            
 - Who is Guido Van Rossum                                                       
 - Where does the name "Python" come from                                        
