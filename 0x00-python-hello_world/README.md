@@ -7,11 +7,11 @@
 
 
 # :colombia:  Python - Hello, World
-First step in Python:                                                           
-Python scripts                                                                  
-Manipulatin strings and integers in python                                      
-Linked list in C(a nice exercice)                                               
-Some about asembler/Python                                                      
+- First step in Python:                                                           
+  - Python scripts                                                                  
+  - Manipulatin strings and integers in python                                      
+  - Linked list in C(a nice exercice)                                               
+  - Some about asembler/Python                                                      
 ## Examples                                                                     
 form this text:                                                                 
                                                                                 
