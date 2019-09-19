@@ -42,4 +42,6 @@ For my learning in Holberton School
 | ------------------------ | ---------------------------------------- |
 |0x00 Python-Hello, World  | making python scripts, manipulation strings and integers|
 |0x01 Python-if/else, loops, functions  |Conditional if, else, elif. Loops: for, while. Functions |
-|0x02 Python-Import & modules|||                                                                             
+|0x02 Python-Import & modules| conditional, strings, import functions, args|
+|0x03 Python- Data strunctures: Lists and tuples| methods, tuples, list, comprehension|
+|0x04 Python More data structures: Set  & Dictionary|
