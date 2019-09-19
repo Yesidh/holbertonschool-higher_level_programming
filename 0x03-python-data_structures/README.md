@@ -6,19 +6,23 @@
 
 
 
-# :colombia: Python - Data Structures: Lists, Tuples
--What are a list and how to use them                                            
--Differences and similarities between strings and lists                         
--Methods lists and how to use them                                              
--How to use lists as stacks and queues                                          
--List comprehensions and how to use them                                        
--Tuples and how to use them                                                     
--When use tuples, when use list                                                 
--What is a sequence                                                             
--Tuple packing                                                                  
--How to use del statement and how to use it                                     
+# :colombia: Python - Data Structures: Lists, Tuples                            
+- What are a list and how to use them                                           
+- Differences and similarities between strings and lists                        
+- Methods lists and how to use them                                             
+- How to use lists as stacks and queues                                         
+- List comprehensions and how to use them                                       
+- Tuples and how to use them                                                    
+- When use tuples, when use list                                                
+- What is a sequence                                                            
+- Tuple packing                                                                 
+- How to use del statement and how to use it                                    
 ## Examples                                                                     
+- Return a tupe with the lenght of a stirng and its first character:            
                                                                                 
+  sentence = "At Holberton school, I learnt C!"                                 
+                                                                                
+  Length: 32 - First character: A                                               
 ## Prerequisites
 8 lecture hours about list and tuples in phyton                                 
 ## Installing
