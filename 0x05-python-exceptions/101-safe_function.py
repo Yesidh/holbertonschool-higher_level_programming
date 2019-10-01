@@ -4,8 +4,8 @@ import sys
 
 def safe_function(fct, *args):
     try:
-      result = fct(*args)
+        result = fct(*args)
     except Exception as err:
         print("Exception:", err, file=sys.stderr)
-        return False
+        return None
     return result
