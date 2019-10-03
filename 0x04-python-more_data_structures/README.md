@@ -18,7 +18,11 @@
 - What is a lambda function                                                     
 - What is map, reduce and map funcionts                                         
 ## Examples                                                                     
-see the file 8-multiple_returns.py                                              
+my_list = [1, 2, 3, 1, 4, 2, 5]                                                 
+print the add of all unique elements en the list:                               
+                                                                                
+Result: 15                                                                      
+                                                                                
 ## Prerequisites
 8 lecture hours about data structues, set and dictionary in phyton              
 ## Installing
