@@ -1,0 +1,133 @@
+============================================
+How to use 0-add_integer.py
+============================================
+
+This library is very simple, since it only has one function called
+ ''add_integer()''.
+
+Numbers:
+========
+''add_integer()'' returns the add of its arguments. For numbers, that value
+is equivalent to using the ''+'' operator
+:: with positives integers
+	>>> add_integer = __import__('0-add_integer').add_integer
+	>>> add_integer(1, 2)
+	3
+
+:: without any argument
+      >>> add_integer()
+      Traceback (most recent call last):
+      TypeError: add_integer() missing 1 required positional argument: 'a'
+
+:: with none argument
+   	>>> add_integer(None)
+	Traceback (most recent call last):
+	TypeError: a must be an integer
+
+:: with negatives numbers
+	>>> add_integer(100, -2)
+	98
+
+:: with only one argument
+   	>>> add_integer(2)
+	100
+
+:: with float and negatives numbers
+   	>>> add_integer(100.3, -2)
+	98
+
+:: with the first argument in zero
+   	>>> add_integer(0)
+	98
+
+:: with both argument in zero
+   	>>> add_integer(0, 0)
+	0
+
+:: with a binary number like argument
+      	>>> add_integer(bin(4), 5)
+	Traceback (most recent call last):
+	TypeError: a must be an integer
+
+:: with a hexadecimal number like argument
+   	>>> add_integer(5, hex(54))
+	Traceback (most recent call last):
+	TypeError: b must be an integer
+
+:: with infinite int like argument
+   	>>> add_integer(int('inf'), 5)
+	Traceback (most recent call last):
+	ValueError: invalid literal for int() with base 10: 'inf'
+
+:: with infinite float like argument
+   	>>> add_integer(5, float('inf'))
+	Traceback (most recent call last):
+	OverflowError: cannot convert float infinity to integer
+
+Strings:
+========
+:: b argument like string
+       >>> add_integer(4, "school")
+       Traceback (most recent call last):
+       TypeError: b must be an integer
+
+:: a argument like string
+     >>> add_integer("school", 10)
+     Traceback (most recent call last):
+     TypeError: a must be an integer
+
+:: a and b argument like string
+     >>> add_integer("shcool", "school")
+     Traceback (most recent call last):
+     TypeError: a must be an integer
+
+:: strings numbers inside the strings
+     >>> add_integer("L0rA", 13)
+     Traceback (most recent call last):
+     TypeError: a must be an integer
+
+Booleans:
+=========
+:: when pass True and False like argument
+      >>> add_integer(True, False)
+      1
+
+:: when pass True and True like argument
+      >>> add_integer(True, True)
+      2
+
+:: when pass False and False like argument
+      >>> add_integer(False, False)
+      0
+
+:: when pass true and false like argument
+      >>> add_integer(false, true)
+      Traceback (most recent call last):
+      NameError: name 'false' is not defined
+
+:: when pass pass false and True like argument
+      >>> add_integer(false, True)
+      Traceback (most recent call last):
+      NameError: name 'false' is not defined
+
+:: when pass pass true and True like argument
+      >>> add_integer(true, False)
+      Traceback (most recent call last):
+      NameError: name 'true' is not defined
+
+Tuples, list and sets:
+======================
+:: when pass a tuple like argument
+      >>> add_integer((2, 3), 3)
+      Traceback (most recent call last):
+      TypeError: a must be an integer
+
+:: when pass a list like argument
+      >>> add_integer(3, [5, 4])
+      Traceback (most recent call last):
+      TypeError: b must be an integer
+
+:: when pass a dictionary like argument
+      >>> add_integer({4, 5}, 2)
+      Traceback (most recent call last):
+      TypeError: a must be an integer
