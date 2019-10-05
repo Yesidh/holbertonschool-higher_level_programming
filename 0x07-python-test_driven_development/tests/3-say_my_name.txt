@@ -51,6 +51,10 @@ Strings:
 	Traceback (most recent call last):
 	TypeError: first_name must be a string
 
+:: with only one argument
+   	>>> say_my_name("Hola")
+	My name is Hola 
+
 Numbers:
 ========
 :: with numbers
