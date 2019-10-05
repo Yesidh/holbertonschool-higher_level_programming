@@ -14,6 +14,10 @@ max_integer = __import__('6-max_integer').max_integer
 class TestMaxInteger(unittest.TestCase):
     """Method for find a max integer in a list"""
 
+    def test_basic_oneelement(self):
+        """test with only one element"""
+        self.assertEqual(max_integer([1]), 1)
+
     def test_max_integer(self):
         """ positives numbers like arguments"""
         self.assertEqual(max_integer([7, 22, 3, 4]), 22)
@@ -33,6 +37,3 @@ class TestMaxInteger(unittest.TestCase):
     def test_for_None_argument(self):
         """test None argument"""
         self.assertEqual(max_integer([]), None)
-
-if __name__ == '__main__':
-    unittest.main()
