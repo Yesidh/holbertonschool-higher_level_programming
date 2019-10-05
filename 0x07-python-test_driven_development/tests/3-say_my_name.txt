@@ -1,0 +1,58 @@
+============================================
+How to use 3-say_my_name.py
+============================================
+
+This library is very simple, since it only has one function called
+ ''say_my_name()''.
+
+Strings:
+========
+''say_my_name()'' print My name is first_name last_name.
+
+:: with normal names Upper+lower case
+	>>> say_my_name = __import__('3-say_my_name').say_my_name
+	>>> say_my_name("Yesid", "Gutierrez")
+	My name is Yesid Gutierrez
+
+:: with empty elements
+   	>>> say_my_name()
+	Traceback (most recent call last):
+	TypeError: say_my_name() takes at least 1 argument (0 given)
+
+:: with only lowercase letters
+   	>>> say_my_name("only", "lowercase")
+	My name is only lowercase
+
+:: with only UPPERCASE
+   	>>> say_my_name("ONLY", "UPPERCASE")
+	My name is ONLY UPPERCASE
+
+:: with special characters
+   	>>> say_my_name("!@#$%", "^&*()")
+	My name is !@#$% ^&*()
+
+:: with ascii code \n
+   	>>> say_my_name("\n", "\n")
+	My name is 
+	<BLANKLINE>
+	<BLANKLINE>
+
+:: with empty strings
+   	>>> say_my_name("", "")
+	My name is  
+
+:: with None like argument
+   	>>> say_my_name(None)
+	Traceback (most recent call last):
+	TypeError: first_name must be a string
+
+:: with more than 3 arguments
+   	>>> say_my_name("Yesid", "Gutierrez", "Villalba")
+	Traceback
+
+Numbers:
+========
+:: with numbers
+   	>>> say_my_name(5, "perez")
+	Traceback (most recent call last):
+	TypeError: first_name must be a string
