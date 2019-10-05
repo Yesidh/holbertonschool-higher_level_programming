@@ -14,6 +14,15 @@ Strings:
 	>>> say_my_name("Yesid", "Gutierrez")
 	My name is Yesid Gutierrez
 
+:: with empty arguments
+   	>>> say_my_name()
+	Traceback (most recent call last):
+	TypeError: say_my_name() takes at least 1 argument (0 given)
+
+:: with 3 arguments
+   	>>> say_my_name("Yesid", "Gutierrez", "Villalba")
+	Traceback (most recent call last):
+	TypeError: say_my_name() takes at most 2 arguments (3 given)
 
 :: with only lowercase letters
    	>>> say_my_name("only", "lowercase")
