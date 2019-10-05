@@ -1,0 +1,111 @@
+============================================
+How to use 4-print_square.py
+============================================
+
+This library is very simple, since it only has one function called
+ ''print_square()''.
+
+Numbers:
+========
+''print_square()'' print a square with the character # with raw and lines
+with the same size.
+
+:: with positive integers
+
+
+	>>> print_square = __import__('4-print_square').print_square
+	>>> print_square(2)
+	##
+	##
+
+:: without any argument
+      >>> print_square()
+      Traceback (most recent call last):
+      TypeError: print_square() takes exactly 1 argument (0 given)
+
+:: with none argument
+   	>>> add_integer(None)
+	Traceback (most recent call last):
+	NameError: name 'add_integer' is not defined
+
+:: with negatives numbers
+	>>> print_square(-2)
+	Traceback (most recent call last):
+	TypeError: size must be an integer
+
+:: with float number
+   	>>> print_square(5.2)
+	Traceback (most recent call last):
+	TypeError: size must be an integer
+
+:: with the argument in zero
+   	>>> print_square(0)
+
+:: with a binary number like argument
+      	>>> print_square(bin(4))
+	Traceback (most recent call last):
+	TypeError: size must be an integer
+
+:: with a hexadecimal number like argument
+   	>>> print_square(hex(54))
+	Traceback (most recent call last):
+	TypeError: size must be an integer
+
+:: with infinite int like argument
+   	>>> print_square(int('inf'))
+	Traceback (most recent call last):
+	ValueError: invalid literal for int() with base 10: 'inf'
+
+:: with infinite int like argument
+   	>>> print_square(float('inf'))
+	Traceback (most recent call last):
+	TypeError: size must be an integer
+
+Strings:
+========
+:: size argument like string
+       >>> print_square( "school")
+       Traceback (most recent call last):
+       TypeError: size must be an integer
+
+:: strings numbers inside the strings
+     >>> print_square("L0rA")
+     Traceback (most recent call last):
+     TypeError: size must be an integer
+
+Booleans:
+=========
+:: when pass True like argument
+      >>> print_square(True)
+      #
+
+:: when pass False like argument
+      >>> print_square(False)
+
+
+:: when pass true like argument
+      >>> print_square(true)
+      Traceback (most recent call last):
+      NameError: name 'true' is not defined
+
+:: when pass false  like argument
+      >>> print_square(false)
+      Traceback (most recent call last):
+      NameError: name 'false' is not defined
+
+Tuples, list and sets:
+======================
+:: when pass a tuple like argument
+      >>> print_square((2, 3))
+      Traceback (most recent call last):
+      TypeError: size must be an integer
+
+:: when pass a list like argument
+      >>> print_square([5, 4])
+      Traceback (most recent call last):
+      TypeError: size must be an integer
+
+:: when pass a dictionary like argument
+      >>> print_square({4, 5})
+      Traceback (most recent call last):
+      TypeError: size must be an integer
