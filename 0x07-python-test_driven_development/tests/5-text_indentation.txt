@@ -1,0 +1,30 @@
+============================================
+How to use 5-text_indentation.py
+============================================
+
+This library is very simple, since it only has one function called
+ ''text_indentation()''.
+
+Numbers:
+========
+''text_indentation()'' print a string until foun a '.' ':' and '?' and print
+a '\n' and continue with the printing
+
+:: with no arguments
+	>>> text_indentation = __import__('5-text_indentation').text_indentation
+	>>> text_indentation()
+	Traceback (most recent call last):
+	...
+	TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+:: with an integer like argument
+   	>>> text_indentation(5)
+	Traceback (most recent call last):
+	...
+	TypeError: text must be a string
+
+:: with unknow argument
+   	>>> text_indentation(mejordicho)
+	Traceback (most recent call last):
+	...
+	NameError: name 'mejordicho' is not defined
