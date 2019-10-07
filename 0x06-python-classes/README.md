@@ -53,10 +53,10 @@ for my learning in Holberton School
 
 |             File               |             Description                  |
 |--------------------------------| ---------------------------------------- |
-|**0-square.py**|
-|**1-square.py**|
-|**2-square.py**|
-|**3-square.py**|
-|**4-square.py**|
-|**5-square.py**|
+|**0-square.py**|  Write an empty class Square that defines a square. not allowed to import any module|
+|**1-square.py**|  Write a class Square that defines a square by private instance attribute: size(no type value difinition). Not allowed to import any module|
+|**2-square.py**|  Write a class Square that defines a square with private instance size that must be an integer othersize TypeError exception with the message size must be an integer|
+|**3-square.py**|  Write a class Square that defines a square by with private instance size that must be an integer othersize TypeError exception with the message size must be an integer, if size is less than 0 raise a ValueError exception with the message size must be >= 0, public instance method def area(self). not allowed to import any module|
+|**4-square.py**|  Write a class Square that defines a square by with private instance size that must be an integer othersize TypeError exception with the message size must be an integer, if size is less than 0 raise a ValueError exception with the message size must be >= 0, public instance method def area(self), instantiation with optional size: __init__(self, size=0). not allowed to import any module|
+|**5-square.py**| Write a class Square that defines a square by with private instance size that must be an integer othersize TypeError exception with the message size must be an integer, if size is less than 0 raise a ValueError exception with the message size must be >= 0, public instance method def area(self), instantiation with optional size: __init__(self, size=0), puclib instance method def my_print(self) that prints in stdout the square with the character #, if size is equal to 0 print an empty line. not allowed to import any module|
 |**6-square.py**|
