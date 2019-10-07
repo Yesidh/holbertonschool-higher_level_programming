@@ -15,7 +15,30 @@
 - How to raise a builtion exception                                             
 - When do we need to implement a clean-up action after an exception             
 ## Examples                                                                     
-
+divide element by element 2 lists:                                              
+                                                                                
+my_l_1 = [10, 8, 4]                                                             
+my_l_2 = [2, 4, 4]                                                              
+result = list_division(my_l_1, my_l_2, max(len(my_l_1), len(my_l_2)))           
+print(result)                                                                   
+                                                                                
+print("--")                                                                     
+                                                                                
+my_l_1 = [10, 8, 4, 4]                                                          
+my_l_2 = [2, 0, "H", 2, 7]                                                      
+result = list_division(my_l_1, my_l_2, max(len(my_l_1), len(my_l_2)))           
+print(result)                                                                   
+                                                                                
+ OUTPUT:                                                                        
+                                                                                
+[5.0, 2.0, 1.0]                                                                 
+--                                                                              
+division by 0                                                                   
+wrong type                                                                      
+out of range                                                                    
+[5.0, 0, 0, 2.0, 0]                                                             
+                                                                                
+for more info see the file: 4-list_division.py                                  
 ## Prerequisites
 8 lecture hours about exceptions.                                               
 ## Installing
