@@ -16,6 +16,10 @@ class Rectangle:
         self.__height = height
         Rectangle.number_of_instances += 1
 
+    @classmethod
+    def square(cls, size=0):
+        return cls(size, size)
+
     @property
     def width(self):
         return self.__width
@@ -81,7 +85,3 @@ class Rectangle:
             return rect_1
         elif rect_1.area() < rect_2.area():
             return rect_2
-
-    @classmethod
-    def square(cls, size=0):
-        return cls(size, size)
