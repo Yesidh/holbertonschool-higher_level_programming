@@ -17,7 +17,7 @@ def text_indentation(text):
             print("{}".format(text[i]))
             print("")
             i += 1
-            if text[i] == ' ':
+            while text[i] == ' ':
                 i += 1
         print("{}".format(text[i]), end="")
         i += 1
