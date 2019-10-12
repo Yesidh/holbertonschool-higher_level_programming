@@ -55,6 +55,11 @@ Strings:
    	>>> say_my_name("Hola")
 	My name is Hola 
 
+:: with first argument and second empty
+   	>>> say_my_name("Hola", 234)
+	Traceback (most recent call last):
+	TypeError: last_name must be a string
+
 Numbers:
 ========
 :: with numbers
