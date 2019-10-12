@@ -21,7 +21,7 @@ with the same size.
 :: without any argument
       >>> print_square()
       Traceback (most recent call last):
-      TypeError: print_square() takes exactly 1 argument (0 given)
+      TypeError: print_square() missing 1 required positional argument: 'size'
 
 :: with none argument
    	>>> add_integer(None)
@@ -31,7 +31,7 @@ with the same size.
 :: with negatives numbers
 	>>> print_square(-2)
 	Traceback (most recent call last):
-	TypeError: size must be an integer
+	TypeError: size must be >= 0
 
 :: with float number
    	>>> print_square(5.2)
