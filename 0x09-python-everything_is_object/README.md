@@ -8,7 +8,10 @@
 
 # :colombia: Python - Everything is object                                      
 ## Examples                                                                     
-
+a and b point to the same object?                                               
+>>> a = 89                                                                      
+>>> b = 89                                                                      
+see the answer in the file 3-answer.txt                                         
 ## Prerequisites
 8 lecture hours about Objects                                       
 ## Installing
@@ -34,9 +37,11 @@ for my learning in Holberton School
 
 |             File               |             Description                  |
 |--------------------------------| ---------------------------------------- |
-|**0-answer.txt**|
-|**1-answer.txt**|
-|**2-answer.txt**|
+|**0-answer.txt**| What function would you use to print the type of an object?|
+|**1-answer.txt**| How do you get the variable identifier (which is the memory address in the CPython implementation)?|
+|**2-answer.txt**| In the following code, do a and b point to the same object? Answer with Yes or No
+>>> a = 89
+>>> b = 100
 |**3-answer.txt**|
 |**4-answer.txt**|
 |**5-answer.txt**|
