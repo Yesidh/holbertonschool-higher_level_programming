@@ -59,3 +59,9 @@ Numbers:
    >>> my_list.append(10000000000000000000000000000000000000000000)
    >>> my_list.print_sorted()
    [5, 5, 5, 5, 5, 10000000000000000000000000000000000000000000]
+
+:: wiht None value
+   >>> my_list.append(None)
+   >>> my_list.print_sorted()
+   Traceback (most recent call last):
+   TypeError: unorderable types: NoneType() < int()
