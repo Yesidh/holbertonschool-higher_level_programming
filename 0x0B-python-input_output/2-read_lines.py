@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 def read_lines(filename="", nb_lines=0):
-    """function that reads a text and return number of lines"""
+    """function that reads n lines of a text file and prints it to stdout"""
+
     lines = 0
     with open(filename) as f:
         for lin in f:
