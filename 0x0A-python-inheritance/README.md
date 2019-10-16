@@ -49,6 +49,7 @@ The output
 [ValueError] age must be greater than 0
 [ValueError] distance must be greater than 0
 ```
+check the code in the file 7-base_geometry.py
 ## Prerequisites
 8 lecture hours about  Inheritance                                              
 ## Installing
