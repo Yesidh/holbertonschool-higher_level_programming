@@ -20,7 +20,7 @@
 - What are, when and how to use isinstance, issubclass, type and super built-in functions
 ## Examples                                                                     
 Create a class method for validate an integer into the class BaseGeometry        
-'''
+```
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 bg = BaseGeometry()
@@ -42,13 +42,13 @@ try:
     bg.integer_validator("distance", -4)
 except Exception as e:
     print("[{}] {}".format(e.__class__.__name__, e))
-'''
+```
 The output                                                                      
-'''
+```
 [TypeError] name must be an integer
 [ValueError] age must be greater than 0
 [ValueError] distance must be greater than 0
-'''
+```
 ## Prerequisites
 8 lecture hours about  Inheritance                                              
 ## Installing
