@@ -65,3 +65,8 @@ Numbers:
    >>> my_list.print_sorted()
    Traceback (most recent call last):
    TypeError: unorderable types: NoneType() < int()
+
+:: wiht NULL value
+   >>> my_list.append(NULL)
+   Traceback (most recent call last):
+   NameError: name 'NULL' is not defined
