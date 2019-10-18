@@ -33,6 +33,4 @@ class Student:
         ''' method that replaces all atrributes of the Student instance'''
 
         for j_key, j_value in json.items():
-            for d_key, d_value in self.__dict__items():
-                if j_key == d_key:
-                    self.__dict__[j_key] = j_value
+            self.__dict__[j_key] = j_value
