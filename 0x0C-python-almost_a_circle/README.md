@@ -14,15 +14,15 @@
   * Class
   * Private attribute
   * Getter/Setter
- * Class method
- * Static method
- * Inheritance
- *  Unittest
- * Read/Write file
+  * Class method
+  * Static method
+  * Inheritance
+  *  Unittest
+  * Read/Write file
 * also learn about:
- * args and kwargs
- * Serialization/Deserialization
- * JSON
+  * args and kwargs
+  * Serialization/Deserialization
+  * JSON
 ## Examples                                                                     
 ## Prerequisites
 40 hours of video reviewing the topics seen                                     
