@@ -59,7 +59,7 @@ class Base:
     def create(cls, **dictionary):
         '''method that returns an instance with all attributes already set'''
 
-        instance_class = cls(10)
+        instance_class = cls.__name__(10)
         instance_class.update(**dictionary)
         return instance_class
 
