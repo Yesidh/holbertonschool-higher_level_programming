@@ -107,7 +107,6 @@ class Rectangle(Base):
                                                        self.y, self.width,
                                                        self.height)
 
-
     def update(self, *args, **kwargs):
         '''Updating the class Rectangle with arguments'''
 
