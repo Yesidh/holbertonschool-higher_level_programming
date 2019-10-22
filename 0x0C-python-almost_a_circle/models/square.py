@@ -18,7 +18,7 @@ class Square(Rectangle):
         super().__init__(size, size, x, y, id)
 
     def __str__(self):
-        '''__str__ overwriten the __str__ method that inherint from Rectangle'''
+        '''overwriten the __str__ method that inherint from Rectangle'''
 
         return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y,
                                                  self.height)
