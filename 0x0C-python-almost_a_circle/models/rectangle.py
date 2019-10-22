@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-from models.base import Base
-
 '''
 ============================================================
 Module with the class Rectangle that inherit from class Base
 ============================================================
 '''
+
+from models.base import Base
 
 
 class Rectangle(Base):
