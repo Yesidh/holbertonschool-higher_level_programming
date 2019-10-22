@@ -43,7 +43,7 @@ class Base:
             full_list_json.append(fulano.to_dictionary())
 
         empty_list_json = Base.to_json_string(full_list_json)
-        with open(cls.__name__ + '.json', 'w') as f:
+        with open(cls.__name__+'.json', 'w') as f:
             f.write(empty_list_json)
 
     @staticmethod
