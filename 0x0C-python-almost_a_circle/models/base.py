@@ -38,15 +38,13 @@ class Base:
 
         if list_objs is None:
             empty_lis = []
-            with open(cls.__name__ + '.json', 'w') as f:
-                empty_lis_json = cls.to_json_string(empty_lis)
-                f.write(empty_list_json)
-        else:
-            full_list_json = list()
-            with open(cls.__name__ + '.json', 'w') as f:
-                for fulano in list_objs:
-                    full_list_json.append(fulano.to_dictionary())
-                f.write(cls.to_json_string(full_list_json))
+        full_list_json = list()
+        for fulano in list_objs:
+            full_list_json.append(fulano.to_dictionary())
+
+        empty_list_json = Base.to_json_string(full_list_json)
+        with open(cls.__name__ + '.json', 'w') as f:
+            f.write(empty_list_json)
 
     @staticmethod
     def from_json_string(json_string):
