@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-
-import json
-import os
 '''
 =============================
 Module with the class Base
 =============================
 '''
+
+import json
+import os
 
 
 class Base:
