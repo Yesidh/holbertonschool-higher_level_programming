@@ -42,7 +42,7 @@ class Base:
                 empty_lis_json = Base.to_json_string(empty_lis)
                 f.write(empty_list_json)
         else:
-            full_list_json = list()
+            full_list_json = []
             with open(cls.__name__ + '.json', 'w') as f:
                 for fulano in list_objs:
                     full_list_json.append(fulano.to_dictionary())
