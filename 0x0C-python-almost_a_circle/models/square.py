@@ -65,3 +65,9 @@ class Square(Rectangle):
                     self.x = value
                 elif key == 'y':
                     self.y = value
+
+    def to_dictionary(self):
+        '''create a dictionary with the classes attributes'''
+
+        dic_square = dict(id=self.id, size=self.size, x=self.x, y=self.y)
+        return dic_square
