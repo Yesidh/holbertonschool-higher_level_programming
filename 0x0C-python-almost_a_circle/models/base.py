@@ -37,7 +37,7 @@ class Base:
         '''JSON string to file'''
 
         if list_objs is None:
-            empty_lis = []
+            list_objs = []
         full_list_json = list()
         for fulano in list_objs:
             full_list_json.append(fulano.to_dictionary())
