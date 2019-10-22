@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 import json
-
+import os
 '''
 =============================
 Module with the class Base
@@ -47,3 +47,35 @@ class Base:
                 for fulano in list_objs:
                     full_list_json.append(fulano.to_dictionary())
                 f.write(Base.to_json_string(full_list_json))
+
+    @staticmethod
+    def from_json_string(json_string):
+        '''return the list of the JSON string representation'''
+
+        if json_string is None or len(json_string) == 0:
+            return list()
+        else:
+            return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        '''method that returns an instance with all attributes already set'''
+
+        instance_class = cls(10, 7, 8, 2)
+        instance_class.update(**dictionary)
+        return instance_class
+
+    @classmethod
+    def load_from_file(cls):
+        '''return a list of instances'''
+
+        if not os.path.isfile(cls.__name__ + '.json'):
+            return []
+        else:
+            with open(cls.__name__ + '.json') as _file:
+                to_json = _file.read()
+            dict_list = Base.from_json_string(to_json)
+            obj_list = list()
+            for sutanito in dict_list:
+                obj_list.append(cls.create(**sutanito))
+            return obj_list
