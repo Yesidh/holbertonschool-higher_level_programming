@@ -7,6 +7,7 @@ Module with the class Base
 
 import json
 import os
+import csv
 
 
 class Base:
@@ -60,9 +61,9 @@ class Base:
         '''method that returns an instance with all attributes already set'''
 
         if cls.__name__ == 'Rectangle':
-            instance_class = cls(10, 2)
+            instance_class = cls(10, 2, 3)
         if cls.__name__ == 'Square':
-            instance_class = cls(10)
+            instance_class = cls(10, 15)
         instance_class.update(**dictionary)
         return instance_class
 
@@ -80,3 +81,38 @@ class Base:
             for sutanito in dict_list:
                 obj_list.append(cls.create(**sutanito))
             return obj_list
+
+    @classmethod
+    def save_to_file_csv(cls, list_objs):
+        '''save in CSV file'''
+
+        if cls.__name__ == 'Rectangle':
+            _file = 'Rectangle.csv'
+            headers = ['id', 'width', 'height', 'x', 'y']
+        elif cls.__name__ == 'Square':
+            _file = 'Square.csv'
+            headers = ['id', 'size', 'x', 'y']
+        with open(_file, 'w') as fil:
+            csv_writer = csv.DictWriter(fil, fieldnames=headers)
+            csv_writer.writeheader()
+            for row in list_objs:
+                dict_row = row.to_dictionary()
+                csv_writer.writerow(dict_row)
+
+    @classmethod
+    def load_from_file_csv(cls):
+        '''deserializes from csv'''
+
+        if cls.__name__ == 'Rectangle':
+            _file = 'Rectangle.csv'
+        elif cls.__name__ == 'Square':
+            _file = 'Square.csv'
+        list_csv = []
+        dict_csv = {}
+        with open(_file) as f:
+            dic_reader = csv.DictReader(f)
+            for row in dic_reader:
+                for key, value in row.items():
+                    dict_csv[key] = int(value)
+                list_csv.append(cls.create(**dict_csv))
+            return list_csv
