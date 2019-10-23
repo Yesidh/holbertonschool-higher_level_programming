@@ -8,6 +8,7 @@ Module with the class Base
 import json
 import os
 import csv
+import turtle
 
 
 class Base:
@@ -116,3 +117,34 @@ class Base:
                     dict_csv[key] = int(value)
                 list_csv.append(cls.create(**dict_csv))
             return list_csv
+
+    @staticmethod
+    def draw(list_rectangles, list_squares):
+        '''open a window and draws all the Rectangles and Squares'''
+
+        yesid = turtle.Screen()
+        yesid.bgcolor("orange")
+        yesid.title("Task21")
+        yesid2 = turtle.Turtle()
+
+        for rectangle in list_rectangles:
+            yesid2.up()
+            yesid2.goto(rectangle.x, rectangle.y)
+            yesid2.color("Royal Blue")
+            yesid2.down()
+            for slic in range(2):
+                yesid2.forward(rectangle.width)
+                yesid2.left(90)
+                yesid2.forward(rectangle.height)
+                yesid2.left(90)
+
+        for square in list_squares:
+            yesid2.up()
+            yesid2.goto(square.x, square.y)
+            yesid2.color("Red")
+            yesid2.down()
+            for slic in range(4):
+                yesid2.forward(square.width)
+                yesid2.left(90)
+                yesid2.forward(square.width)
+        turtle.done()
