@@ -59,7 +59,7 @@ for my learning in Holberton School
 
 |             File               |             Description                  |
 |--------------------------------| ---------------------------------------- |
-|**0-list_databases.sql**|
+|**0-list_databases.sql**| script that lists all databases of MySQL server|
 |**1-create_database_if_missing.sql**|
 |**2-remove_database.sql**|
 |**3-list_tables.sql**|
