@@ -25,7 +25,8 @@ cur.execute(que)
 rows = cur.fetchall()  # save the query in the rows variable like cur especifi
 
 for row in rows:
-    print(row)
+    if row[1] == sys.argv[4]:
+        print(row)
 
 cur.close()  # close all cursors
 connect_db.close()  # close databases
