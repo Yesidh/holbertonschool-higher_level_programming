@@ -10,8 +10,8 @@ import sqlalchemy
 import sys
 
 
-def states():
+def _states():
     """states to import"""
 
 if __name__ == "__main__":
-    states()
+    _states()
