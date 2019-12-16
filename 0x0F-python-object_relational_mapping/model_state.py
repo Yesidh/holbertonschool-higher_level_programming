@@ -10,11 +10,11 @@ from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 
 
-Base = declarative_base()
+Base= declarative_base()
 
 
-def states():
+def State():
     """states to import"""
 
 if __name__ == "__main__":
-    states()
+    State()
