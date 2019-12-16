@@ -16,7 +16,7 @@ def states():
                                  passwd=sys.argv[2], db=sys.argv[3], port=3306)
 
     cur = connect_db.cursor()
-    cur.execute("SELECT * FROM states WHERE name='%s';" % sys.argv[4])
+    cur.execute("SELECT * FROM states WHERE name=%s", (sys.argv[4], ))
     rows = cur.fetchall()
     for row in rows:
         print(row)
