@@ -20,12 +20,13 @@ connect_db = MySQLdb.connect(host="localhost", user=sys.argv[1],
                              passwd=sys.argv[2], db=sys.argv[3],
                              port=3306)
 
+abc = "SELECT * FROM states WHERE name='{}' ORDER BY id;".format(sys.argv[4])
 cur = connect_db.cursor()  # cur is a method to retrieve data from database
-que = "SELECT * FROM states WHERE name = '{}' ORDER BY id;".format(sys.argv[4])
-cur.execute(que)
+cur.execute(abc)
 rows = cur.fetchall()  # save the query in the rows variable like cur especifi
 for row in rows:
-    print(row)
+    if row[1] == sys.argv[4]:
+        print(row)
 cur.close()  # close all cursors
 connect_db.close()  # close databases
 if __name__ == "__main__":
