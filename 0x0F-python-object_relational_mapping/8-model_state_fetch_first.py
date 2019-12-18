@@ -19,4 +19,7 @@ if __name__ == "__main__":
     session = the_session()
 
     el_primerito = session.query(State).first()
-    print("{}: {}".format(el_primerito.id, el_primerito.name))
+    if el_primerito is None:
+        print("Nothing")
+    else:
+        print("{}: {}".format(el_primerito.id, el_primerito.name))
