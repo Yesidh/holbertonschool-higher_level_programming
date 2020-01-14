@@ -15,9 +15,8 @@ import sys
 
 if __name__ == "__main__":
     url = 'https://swapi.co/api/people/'
-    params = {}
-    params['search'] = sys.argv[1]
-    r = requests.get(url, params=params)
+    search = sys.argv[1]
+    r = requests.get(url, params={'search': search})
     print("Number of results:", r.json().get('count'))
     for i in r.json().get('results'):
         print(i.get('name'))
