@@ -10,8 +10,11 @@
 #    You don’t need to check arguments passed to the script (number or type)
 #    You don’t need to manage the pagination
 
+import requests
+import sys
+
 if __name__ == "__main__":
-    url = "https://swapi.co/api/people/?search="
+    url = 'https://swapi.co/api/people/?search='
     try:
         r = requests.get(url + sys.argv[1])
         print("Number of results:", r.json().get('count'))
