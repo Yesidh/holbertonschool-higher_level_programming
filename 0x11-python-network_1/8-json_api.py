@@ -23,9 +23,9 @@ if __name__ == "__main__":
     url = "http://0.0.0.0:5000/search_user"
     try:
         r = requests.post(url, data=payload)
-        if (len(r.text) == 3):
+        if (len(eval(r.text)) == 0):
             print('No result')
-        if (len(r.text) > 3):
+        if (len(eval(r.text)) > 3):
             print('[{}] {}'.format(eval(r.text)['id'], eval(r.text)['name']))
     except Exception as e:
         print("Not a valid JSON")
