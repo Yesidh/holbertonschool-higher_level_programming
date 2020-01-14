@@ -8,6 +8,7 @@
 #      You don’t need to check arguments passed to the script (number or type)
 
 import requests
+from requests.exceptions import HTTPError
 import sys
 
 if __name__ == "__main__":
@@ -17,4 +18,4 @@ if __name__ == "__main__":
         r.raise_for_status()
         print(r.text)
     except requests.exception.HTTPError as e:
-        print('Error code:', r.status_code)
+        print('Error code:', e.response.status_code)
