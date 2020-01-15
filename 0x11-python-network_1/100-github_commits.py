@@ -6,8 +6,8 @@ import requests
 import sys
 
 if __name__ == "__main__":
-    url1 = '/' + sys.argv[1] + '/' + sys.argv[2] + '/commits'
-    url = 'https://api.github.com/repos' + url1
+    url = 'https://api.github.com/repos/{}/{}/commits'.format(sys.argv[1],
+                                                              sys.argv[2])
     r = requests.get(url)
     for i in range(0, 10):
         print(r.json()[i].get('sha') + ': ', end="")
