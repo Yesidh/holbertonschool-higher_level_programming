@@ -7,7 +7,7 @@
    You are not allowed to use var
 */
 
-if (process.argv[2]) {
+if (process.argv[3]) {
   const array = process.argv.slice(2);
   array.sort();
   const num = array.length;
