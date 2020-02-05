@@ -11,8 +11,7 @@
        You must use a loop (while, for, etc.)
 */
 
-const _num = ['C is fun', 'Python is cool', 'Javascript is amazing'];
-var i = 0;
-for (i in _num) {
-  console.log(_num[i]);
+const _strings = ['C is fun', 'Python is cool', 'Javascript is amazing'];
+for (let i = 0; i < _strings.length; i++) {
+  console.log(_strings[i]);
 }
