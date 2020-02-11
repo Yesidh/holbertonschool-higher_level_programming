@@ -2,7 +2,7 @@
 
 const Rectangle = require('./4-rectangle');
 
-//inherint from Rectangle
+// inherint from Rectangle
 class Square extends Rectangle {
   constructor (size) {
     super(size, size);
