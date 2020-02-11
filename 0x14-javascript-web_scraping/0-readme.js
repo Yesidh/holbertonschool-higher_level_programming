@@ -6,7 +6,8 @@ script that reads and prints the content of a file.
   If an error oc curred during the reading, print the error object
 */
 
-const fs = require('fs'); const filename = process.argv[2];
+const fs = require('fs');
+const filename = process.argv[2];
 fs.readFile(filename, 'utf8', function (err, data) {
   if (err) {
     console.log(err);
