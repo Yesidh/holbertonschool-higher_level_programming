@@ -28,7 +28,7 @@ request(url, function (error, response, body) {
           }
         }
       }
-      dictId[i] = count;
+      dictId[idArray[i]] = count;
     }
     console.log(dictId);
   }
